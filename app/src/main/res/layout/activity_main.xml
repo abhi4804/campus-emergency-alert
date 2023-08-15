@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:layout_centerInParent="true"
+
+        android:alpha="0.7" />
+
+<TextView
+android:id="@+id/txtview"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="CLICK AND GET IT SOLVED!"
+android:textColor="@color/black"
+android:textSize="32sp"
+android:textStyle="bold"
+android:layout_marginTop="20dp"
+android:layout_centerHorizontal="true" />
+
+
+<LinearLayout
+android:id="@+id/Linearlayout1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:weightSum="1"
+android:orientation="horizontal"
+android:layout_marginTop="0dp"
+android:layout_alignParentBottom="true">
+
+<Button
+    android:id="@+id/btn_one"
+    android:layout_width="0dp"
+    android:layout_height="100dp"
+    android:layout_weight="1"
+    android:layout_margin="10dp"
+    android:backgroundTint="#77577C"
+android:text="OTHER ISSUES"
+android:textSize="20sp"
+android:textColor="#FFFFFF" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Linearlayout1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="120dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_three"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DA9BE4"
+            android:text="BIO TECHNOLOGY"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_four"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DA9BE4"
+            android:text="SCIENCE BLOCK"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Linearlayout2"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_six"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D461E8"
+            android:text="ELECTRICAL BLOCK"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_seven"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D771E8"
+            android:text="MECHANICAL BLOCK"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Linearlayout3"
+        android:layout_marginTop="134dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_eight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#9C27B0"
+            android:text="HOSTEL ISSUES"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_nine"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#9C27B0"
+            android:text="MAIN BLOCK"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

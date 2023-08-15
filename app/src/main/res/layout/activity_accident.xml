@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".accident">
+    <TextView
+        android:id="@+id/appacci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REPORT AN ACCIDENT"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:id="@+id/accname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/appacci"
+        android:hint="Enter your name"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/accno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/accname"
+        android:hint="Enter your number"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/accreason"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/accno"
+        android:hint="Cause of accident"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/nav2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live navigation:"
+        android:layout_below="@id/accreason"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/btn31"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:text="CALL"
+        android:layout_below="@id/nav2"/>
+    <Button
+        android:id="@+id/btn32"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:text="SUBMIT"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/nav2"/>
+
+</RelativeLayout>

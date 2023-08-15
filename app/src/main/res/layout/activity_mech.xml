@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mech">
+    <TextView
+        android:id="@+id/mech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MECHANICAL BLOCK"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="80dp"
+        />
+    <LinearLayout
+        android:id="@+id/llmb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mech"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/bm1"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="FIRE"
+            />
+        <Button
+            android:id="@+id/bm2"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="AMBULANCE"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llmb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llmb1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/bm3"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="ACCIDENT"/>
+        <Button
+            android:id="@+id/bm4"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="THEFT"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llmb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llmb2"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/bm5"
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="ANIMAL TROUBLE"/>
+        <Button
+            android:id="@+id/bm6"
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="OTHERS"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

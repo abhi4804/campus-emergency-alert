@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chemical">
+    <TextView
+        android:id="@+id/appchem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REPORT A CHEMICAL SPILL"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:id="@+id/chemname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/appchem"
+        android:hint="Enter your name"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/chemno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/chemname"
+        android:hint="Enter your number"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/chemreason"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/chemno"
+        android:hint="Which chemical is spilt"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/chemcost"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/chemreason"
+        android:hint="Harm to human?"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/nav4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live navigation:"
+        android:layout_below="@id/chemcost"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/btnch"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:text="SUBMIT"
+        android:layout_below="@id/nav4"/>
+    <Button
+        android:id="@+id/btnchs"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:text="CALL"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="60dp"
+        android:layout_below="@id/nav4"/>
+
+
+</RelativeLayout>

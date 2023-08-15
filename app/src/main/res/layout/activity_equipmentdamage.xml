@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".equipmentdamage">
+    <TextView
+        android:id="@+id/appequ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EQUPMENT FAILURE"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:id="@+id/equname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/appequ"
+        android:hint="Enter your name"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/equno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/equname"
+        android:hint="Enter your number"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/equreason"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/equno"
+        android:hint="Enter the equipment and damage"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/naveq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live navigation:"
+        android:layout_below="@id/equreason"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/btncalle"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:text="CALL"
+        android:layout_below="@id/naveq"/>
+    <Button
+        android:id="@+id/be1"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:text="SUBMIT"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/naveq"/>
+
+
+</RelativeLayout>

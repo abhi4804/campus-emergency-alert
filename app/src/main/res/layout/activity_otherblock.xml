@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".otherblock">
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTHER BLOCK"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="80dp"
+        />
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appname"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="FIRE"
+            />
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="AMBULANCE"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="ACCIDENT"/>
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="THEFT"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_below="@id/ll2"
+        android:layout_marginLeft="140dp"
+        android:text="Others"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".science">
+    <TextView
+        android:id="@+id/sciencename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCIENCE BLOCK"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="80dp"
+        />
+    <LinearLayout
+        android:id="@+id/llsc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sciencename"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/bs1"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="FIRE"
+            />
+        <Button
+            android:id="@+id/bs2"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="AMBULANCE"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llsc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llsc1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/bs3"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="ACCIDENT"/>
+        <Button
+            android:id="@+id/bs4"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="THEFT"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llsc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llsc2"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/bs5"
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="CHEMICAL SPILL"/>
+        <Button
+            android:id="@+id/bs6"
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="OTHERS"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
